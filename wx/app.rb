@@ -2,7 +2,10 @@ require_relative 'weather'
 require 'ipaddr'
 
 module WX
-class App < Sinatra::Base
+  class App < Sinatra::Base
+
+  use Rack::GeoIPCity, db: 'wx/vendor/GeoIPCity.dat'
+    
   before do
     ip = IPAddr.new(request.env['REMOTE_ADDR'])
     halt 'Sorry, IPv4 only' unless ip.ipv4?
