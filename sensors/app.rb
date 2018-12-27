@@ -28,17 +28,21 @@ module Sensors
       output = []
       if ts = message["timestamp"]
         ts = Time.parse(message["timestamp"]) rescue Time.at(message["timestamp"].to_i)
-        output << "Last read   : #{ts}"
+        output << ts
       else
         output << "No data available, try again later"
       end
       
       if t = message["temperature"]
-        output << "Temperature : #{t} °C"
+        output << "Temperature: %.2f C" % t
       end
 
       if h = message["humidity"]
-        output << "Humidity    : #{h} %RH" 
+        output << "Humidity: %.2f %RH" % h
+      end
+
+      if p = message["pressure"]
+        output << "Pressure: %.2f hPa" % p
       end
       output.join("\n")
     end
