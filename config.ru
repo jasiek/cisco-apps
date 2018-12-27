@@ -8,7 +8,7 @@ require_relative 'sensors/app'
 # Bail if anything goes wrong.
 Thread.abort_on_exception = true
 
-use Rack::Static, urls: { "/" => "index.xml" }, root: "public"
+use Rack::Static, urls: { "/" => "index.xml", "/robots.txt" => "robots.txt" }, root: "public"
 run Rack::URLMap.new(
       "/easycall" => Easycall::App.new,
       "/weather" => WX::App.new,

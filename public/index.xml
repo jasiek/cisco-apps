@@ -8,4 +8,8 @@
     <Name>easycall.pl - stan konta</Name>
     <URL>/easycall</URL>
   </MenuItem>
+  <MenuItem>
+    <Name>Sensors around the house</Name>
+    <URL>/sensors</URL>
+  </MenuItem>
 </CiscoIPPhoneMenu>
