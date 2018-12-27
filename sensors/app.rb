@@ -38,7 +38,7 @@ module Sensors
       end
 
       if h = message["humidity"]
-        output << "Humidity: %.2f %RH" % h
+        output << "Humidity: %.2f %%RH" % h
       end
 
       if p = message["pressure"]
