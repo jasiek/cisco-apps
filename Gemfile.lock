@@ -1,0 +1,72 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    builder (3.2.3)
+    connection_pool (2.2.2)
+    domain_name (0.5.20180417)
+      unf (>= 0.0.5, < 1.0.0)
+    faraday (0.15.4)
+      multipart-post (>= 1.2, < 3)
+    forecast_io (2.0.2)
+      faraday
+      hashie
+      multi_json
+    geoip (1.6.4)
+    hashie (3.6.0)
+    http-cookie (1.0.3)
+      domain_name (~> 0.5)
+    mechanize (2.7.6)
+      domain_name (~> 0.5, >= 0.5.1)
+      http-cookie (~> 1.0)
+      mime-types (>= 1.17.2)
+      net-http-digest_auth (~> 1.1, >= 1.1.1)
+      net-http-persistent (>= 2.5.2)
+      nokogiri (~> 1.6)
+      ntlm-http (~> 0.1, >= 0.1.1)
+      webrobots (>= 0.0.9, < 0.2)
+    mime-types (3.2.2)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2018.0812)
+    mini_portile2 (2.4.0)
+    multi_json (1.13.1)
+    multipart-post (2.0.0)
+    mustermann (1.0.3)
+    net-http-digest_auth (1.4.1)
+    net-http-persistent (3.0.0)
+      connection_pool (~> 2.2)
+    nokogiri (1.9.1)
+      mini_portile2 (~> 2.4.0)
+    ntlm-http (0.1.1)
+    rack (2.0.6)
+    rack-geoipcity (1.0.0)
+      geoip
+      rack
+    rack-protection (2.0.5)
+      rack
+    redis (4.1.0)
+    sinatra (2.0.5)
+      mustermann (~> 1.0)
+      rack (~> 2.0)
+      rack-protection (= 2.0.5)
+      tilt (~> 2.0)
+    tilt (2.0.9)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.7.5)
+    unidecoder (1.1.2)
+    webrobots (0.1.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  builder
+  forecast_io
+  mechanize
+  rack-geoipcity
+  redis
+  sinatra
+  unidecoder
+
+BUNDLED WITH
+   1.17.3
