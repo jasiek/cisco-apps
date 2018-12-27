@@ -28,6 +28,7 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2018.0812)
     mini_portile2 (2.4.0)
+    mqtt (0.5.0)
     multi_json (1.13.1)
     multipart-post (2.0.0)
     mustermann (1.0.3)
@@ -63,6 +64,7 @@ DEPENDENCIES
   builder
   forecast_io
   mechanize
+  mqtt
   rack-geoipcity
   redis
   sinatra

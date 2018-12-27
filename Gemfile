@@ -14,3 +14,5 @@ gem "forecast_io"
 gem "unidecoder"
 gem "redis"
 
+# sensors
+gem "mqtt"
